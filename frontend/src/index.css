@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(4, 4, 71);
+}
+
+.car-card {
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.car-card h2 {
+    font-size: 22px;
+    color: #222;
+}
+
+.car-card h3 {
+    font-size: 18px;
+    color: #666;
+    margin-top: 8px;
+}
+
+.car-year {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #777;
+}
+
+.year {
+    background-color: #e5f0ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+
+.btns{
+    display: flex;
+    gap: 5px;
+}
+
+.btn{
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #ccc;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* Navbar  */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1f2937;
+    color: white;
+}
+
+.navbar-logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.navbar-button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar-logo {
+        font-size: 22px;
+    }
+
+    .navbar-button {
+        padding: 8px 18px;
+    }
+}
+
+
+/* Form  */
+
+.car-form {
+    width: 400px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    padding: 12px 15px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+}
+
+.add-car-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-car-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.cancel-edit-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.form-error {
+    margin-top: 12px;
+    color: #b91c1c;
+    font-size: 14px;
+}
